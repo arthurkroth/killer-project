@@ -16,6 +16,14 @@ html {
     font-weight: 300;
     text-rendering: optimizeLegibility;
 }
+.clearfix {zoom: 1;}
+.clearfix::after {
+    content: '-';
+    clear: both;
+    display: block;
+    height: 0px;
+    visibility: hidden;
+}
 
 /* ---------------------------------------- */
 /* Reusable Components */
@@ -62,6 +70,21 @@ h3 {
     font-size: 110%;
     margin-bottom: 15px;
 }
+.icon-small {
+    display: inline-block;
+    width: 30px;
+    height: auto;
+    color: orange;
+    text-align: center;
+    font-size: 120%;
+    margin-right: 10px;
+
+    /* secrets to allign text and icons */
+
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top: -5px;
+}
 
 /* ---------------------------------------- */
 /* Paragraphs */
@@ -88,6 +111,24 @@ h3 {
     color: orange;
     margin-bottom: 10px;
     text-align: center;
+}
+
+/* ---------------------------------------- */
+/* Generic Links */
+/* ---------------------------------------- */
+
+a:link,
+a:visited {
+    color: orange;
+    text-decoration: none;
+    padding-bottom: 1px;
+    border-bottom: 1px solid orange;
+}
+a:hover,
+a:active {
+    color: #555;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s, color 0.5s;
 }
 
 
@@ -218,4 +259,67 @@ header {
 .meal-photo img:hover {
     opacity: 1;
     transform: scale(1.03);
+}
+
+/* ---------------------------------------- */
+/* How It Works */
+/* ---------------------------------------- */
+
+.section-steps {
+    background-color: #f4f4f4;
+}
+.steps-box:first-child {
+    text-align: right;
+    padding-right: 3%;
+    margin-top: 30px; 
+
+}
+.steps-box:last-child {
+    padding-left: 3%;
+    margin-top: 70px;
+}
+.app-screen {
+    width: 40%;
+    height: auto;
+}
+.works-step {
+    margin-bottom: 50px;
+}
+.works-step:last-of-type {
+    margin-bottom: 80px;
+}
+.works-step div {
+    color: orange;
+    border: 2px solid orange;
+    display: inline;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    font-size: 150%;
+    padding: 5px;
+    float: left;
+    margin-right: 25px;
+}
+.btn-app img {
+    height: 50px;
+    width: auto;
+    margin-right: 10px;
+}
+.btn-app:link,
+.btn-app:visited {
+    border: none;
+}
+
+/* ---------------------------------------- */
+/* Our Cities*/
+/* ---------------------------------------- */
+
+.box img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+.city-feature {
+    margin-bottom: 5px;
 }
