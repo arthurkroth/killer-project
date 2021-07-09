@@ -137,7 +137,8 @@ a:active {
 /* ---------------------------------------- */
 
 .btn:link,
-.btn:visited {
+.btn:visited,
+input[type=submit] {
     display: inline-block;
     padding: 10px 30px;
     font-weight: 300;
@@ -146,7 +147,8 @@ a:active {
     transition: background-color 0.3s, border 0.2s, color 0.2s;
 }
 .btn-full:link,
-.btn-full:visited {
+.btn-full:visited,
+input[type=submit]  {
     background-color: orange;
     border: 1px solid orange;
     color: white;
@@ -158,7 +160,9 @@ a:active {
     color: orange;
 }
 .btn:hover,
-.btn:active {
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active {
     background-color: rgb(151, 98, 0);
 }
 .btn-full:hover,
@@ -361,4 +365,164 @@ cite img {
     border-radius: 50%;
     margin-right: 10px;
     vertical-align: middle;
+}
+
+/* ---------------------------------------- */
+/* Sign Up */
+/* ---------------------------------------- */
+
+.section-plans {
+    background-color: #f4f4f4;
+
+}
+.plan-box {
+    background-color: white;
+    border-radius: 5px;
+    width: 90%;
+    margin-left: 5%;
+    box-shadow: 0 2px 2px #555;
+}
+.plan-box div {
+    padding: 15px;
+    border-bottom: 1px solid #efefef;
+}
+.plan-box div:last-child {
+    text-align: center;
+    border: none;
+}
+.plan-box div:first-child{
+    background-color: #fcfcfc;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.plan-price {
+    font-size: 280%;
+    margin-bottom: 10px;
+    font-weight: 100;
+    color: orange;
+}
+.plan-price span {
+    font-size: 30%;
+    font-weight: 300;
+}
+.plan-price-meal {
+    font-size: 80%;
+}
+.plan-box ul {
+    list-style: none;
+}
+.plan-box ul li {
+    padding: 5px 0;
+}
+
+
+/* ---------------------------------------- */
+/* Contact Form */
+/* ---------------------------------------- */
+
+.contact-form {
+    width: 60%;
+    margin: 0 auto;
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    height: 100px;
+}
+
+input[type=checkbox] {
+    margin: 10px 5px 10px 0;
+}
+
+*:focus {
+    outline: 1px solid orange;
+}
+
+/* ---------------------------------------- */
+/* Footer */
+/* ---------------------------------------- */
+
+footer {
+    background-color: #333;
+    padding: 30px;
+    font-size: 80%;
+}
+
+.footer-nav {
+    list-style: none;
+    float: left;
+}
+
+.social-links {
+    list-style: none;
+    float: right;
+}
+
+.footer-nav li,
+.social-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-nav li:last-child,
+.social-links li:last-child {
+    margin: 0%;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited {
+    text-decoration: none;
+    border: none;
+    color: #888;
+    transition: color 0.2s;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active {
+    color: #ddd;
+}
+
+.social-links li a:link,
+.social-links li a:visited {
+    font-size: 150%;
+}
+
+.ion-social-facebook,
+.ion-social-twitter,
+.ion-social-googleplus,
+.ion-social-instagram {
+    transition: color 0.2s;
+}
+
+.ion-social-facebook:hover {
+    color: #3b5998;
+}
+
+.ion-social-twitter:hover {
+    color: #00aced;
+}
+
+.ion-social-googleplus:hover {
+    color: #dd4b39;
+}
+
+.ion-social-instagram:hover {
+    color: #517fa4;
+}
+
+footer p {
+    color: #888;
+    text-align: center;
+    margin-top: 20px;
 }
